@@ -1,0 +1,70 @@
+# .project metadata for Microcks
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+# TODO: Add package_managers if distributed via registries
+
+schema_version: "1.0.0"
+slug: "microcks"
+name: "Microcks"
+description: "The open source, cloud native tool for API Mocking and Testing"
+type: "project"
+project_lead: "lbroudoux" # TODO: AUTO-DETECTED — please verify
+slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
+  - name: "#microcks"
+    link: "https://cloud-native.slack.com/messages/microcks"
+    primary: true
+
+maturity_log:
+  - phase: "incubating"
+    date: "2023-06-22T00:00:00Z"
+    issue: "https://github.com/cncf/sandbox/issues/37" # TODO: AUTO-DETECTED — please verify
+
+repositories:
+  - "https://github.com/microcks/microcks"
+
+website: "https://microcks.io"
+
+artwork: "https://landscape.cncf.io/logos/microcks.svg"
+
+adopters:
+  path: "https://github.com/microcks/microcks/blob/master/ADOPTERS.md"
+
+
+# TODO: Add package manager identifiers if your project is distributed via registries
+# package_managers:
+#   docker: "microcks/microcks"
+
+social:
+  twitter: "https://twitter.com/microcksio"
+
+security:
+  policy:
+    path: "https://github.com/microcks/microcks/blob/master/SECURITY.md"
+  contact:
+    advisory_url: "https://github.com/microcks/microcks/security/advisories/new"
+
+governance:
+  contributing:
+    path: "https://github.com/microcks/microcks/blob/master/CONTRIBUTING.md"
+  code_of_conduct:
+    path: "https://github.com/microcks/microcks/blob/master/CODE_OF_CONDUCT.md"
+
+legal:
+  license:
+    path: "https://github.com/microcks/microcks/blob/master/LICENSE"
+  identity_type:
+    has_dco: true # AUTO-DETECTED — please verify
+    has_cla: false # AUTO-DETECTED — please verify
+    dco_url:
+      path: "https://developercertificate.org/"
+
+documentation:
+  readme:
+    path: "https://github.com/microcks/microcks/blob/master/README.md"
+
+landscape:
+  category: "App Definition and Development"
+  subcategory: "Application Definition & Image Build"
+
+# CLOMonitor Score: 98/100
+# Documentation: 100 | License: 100 | Best Practices: 96 | Security: 95
