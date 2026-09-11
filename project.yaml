@@ -1,38 +1,85 @@
 # .project metadata for Microcks
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
-# TODO: Add package_managers if distributed via registries
-
 schema_version: "1.0.0"
 slug: "microcks"
 name: "Microcks"
 description: "The open source, cloud native tool for API Mocking and Testing"
 type: "project"
-project_lead: "lbroudoux" # TODO: AUTO-DETECTED — please verify
-slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
+project_lead:
+  - "lbroudoux"
+  - "yada"
+  - "SebastienDegodez"
+slack_channels:
   - name: "#microcks"
+    workspace: "cncf"
     link: "https://cloud-native.slack.com/messages/microcks"
     primary: true
 
 maturity_log:
-  - phase: "incubating"
+  - phase: "sandbox"
     date: "2023-06-22T00:00:00Z"
-    issue: "https://github.com/cncf/sandbox/issues/37" # TODO: AUTO-DETECTED — please verify
+    issue: "https://github.com/cncf/sandbox/issues/37"
+  - phase: "incubating"
+    date: "2026-05-03T00:00:00Z"
+    issue: "https://github.com/cncf/toc/issues/1552"
 
 repositories:
   - "https://github.com/microcks/microcks"
 
 website: "https://microcks.io"
 
-artwork: "https://landscape.cncf.io/logos/microcks.svg"
+artwork: "https://github.com/cncf/artwork/blob/main/examples/incubating.md#microcks-logos"
 
 adopters:
   path: "https://github.com/microcks/microcks/blob/master/ADOPTERS.md"
 
-
-# TODO: Add package manager identifiers if your project is distributed via registries
-# package_managers:
-#   docker: "microcks/microcks"
+package_managers:
+  docker:
+    - "quay.io/microcks/microcks"
+    - "docker.io/microcks/microcks"
+    - "quay.io/microcks/microcks-async-minion"
+    - "docker.io/microcks/microcks-async-minion"
+    - "quay.io/microcks/microcks-postman-runtime"
+    - "docker.io/microcks/microcks-postman-runtime"
+    - "quay.io/microcks/microcks-uber"
+    - "docker.io/microcks/microcks-uber"
+    - "quay.io/microcks/microcks-uber-async-minion"
+    - "docker.io/microcks/microcks-uber-async-minion"
+    - "quay.io/microcks/microcks-operator"
+    - "docker.io/microcks/microcks-operator"
+    - "quay.io/microcks/microcks-cli"
+    - "docker.io/microcks/microcks-cli"
+  helm: "microcks/microcks"
+  homebrew:
+    - "microcks/tap/microcks"
+  maven:
+    - "io.github.microcks:microcks"
+    - "io.github.microcks:microcks-app"
+    - "io.github.microcks:microcks-async-minion"
+    - "io.github.microcks:microcks-distro"
+    - "io.github.microcks:microcks-el"
+    - "io.github.microcks:microcks-java-client"
+    - "io.github.microcks:microcks-jenkins-plugin"
+    - "io.github.microcks:microcks-kube-api"
+    - "io.github.microcks:microcks-kube-operator"
+    - "io.github.microcks:microcks-model"
+    - "io.github.microcks:microcks-operator"
+    - "io.github.microcks:microcks-testcontainers"
+    - "io.github.microcks:microcks-uber-app"
+    - "io.github.microcks:microcks-uber-async-minion"
+    - "io.github.microcks:microcks-util"
+    - "io.github.microcks.quarkus:quarkus-microcks"
+    - "io.github.microcks.quarkus:quarkus-microcks-deployment"
+    - "io.github.microcks.quarkus:quarkus-microcks-parent"
+    - "io.github.microcks.quarkus:quarkus-microcks-test"
+  npm:
+    - "@microcks/microcks-backstage-provider"
+    - "@microcks/microcks-testcontainers"
+    - "@microcks/spectral-ruleset"
+  nuget:
+    - "Microcks.Aspire"
+    - "Microcks.Testcontainers"
 
 social:
   twitter: "https://twitter.com/microcksio"
@@ -41,7 +88,7 @@ security:
   policy:
     path: "https://github.com/microcks/microcks/blob/master/SECURITY.md"
   contact:
-    advisory_url: "https://github.com/microcks/microcks/security/advisories/new"
+    email: "security@microcks.io"
 
 governance:
   contributing:
@@ -53,8 +100,8 @@ legal:
   license:
     path: "https://github.com/microcks/microcks/blob/master/LICENSE"
   identity_type:
-    has_dco: true # AUTO-DETECTED — please verify
-    has_cla: false # AUTO-DETECTED — please verify
+    has_dco: true
+    has_cla: false
     dco_url:
       path: "https://developercertificate.org/"
 
