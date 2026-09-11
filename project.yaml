@@ -29,7 +29,7 @@ repositories:
 
 website: "https://microcks.io"
 
-artwork: "https://landscape.cncf.io/logos/microcks.svg"
+artwork: "https://github.com/cncf/artwork/blob/main/examples/incubating.md#microcks-logos"
 
 adopters:
   path: "https://github.com/microcks/microcks/blob/master/ADOPTERS.md"
